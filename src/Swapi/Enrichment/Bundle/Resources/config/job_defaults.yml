@@ -1,0 +1,8 @@
+services:
+  Akeneo\Tool\Component\Batch\Job\JobParameters\EmptyDefaultValuesProvider:
+    class: Akeneo\Tool\Component\Batch\Job\JobParameters\EmptyDefaultValuesProvider
+    arguments:
+      -
+        - 'induxx_api_import'
+    tags:
+      - { name: akeneo_batch.job.job_parameters.default_values_provider }

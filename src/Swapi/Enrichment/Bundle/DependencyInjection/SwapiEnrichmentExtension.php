@@ -1,11 +1,11 @@
 <?php
 
-namespace swapi\Enrichment\Bundle\DependencyInjection;
+namespace Swapi\Enrichment\Bundle\DependencyInjection;
 
-use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
-use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
+use Symfony\Component\Config\FileLocator;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
+use Symfony\Component\DependencyInjection\Loader;
 
 
 class SwapiEnrichmentExtension extends Extension
@@ -13,9 +13,15 @@ class SwapiEnrichmentExtension extends Extension
 
     public function load(array $configs, ContainerBuilder $container)
     {
-        $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
+        $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('jobs.yml');
         $loader->load('steps.yml');
+        $loader->load('readers.yml');
+        $loader->load('service.yml');
+        $loader->load('providers.yml');
+        $loader->load('job_defaults.yml');
+        $loader->load('job_parameters.yml');
+        $loader->load('job_constraints.yml');
 
     }
 }

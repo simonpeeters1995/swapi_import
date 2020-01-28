@@ -1,0 +1,17 @@
+parameters:
+  swapi_connector.connector_name.api: Swapi API Connector
+  swapi_connector.job_name.api_import: 'induxx_api_import'
+
+services:
+  swapi_connector.api_import_job:
+    class: '%pim_connector.job.simple_job.class%'
+    arguments:
+      - '%swapi_connector.job_name.api_import%'
+      - '@event_dispatcher'
+      - '@akeneo_batch.job_repository'
+      -
+        - '@swapi_connector.step.swapi_category_import_step'
+        - '@swapi_connector.step.swapi_family_import_step'
+        #- '@swapi_connector.step.swapi_product_import_step'
+    tags:
+      - { name: akeneo_batch.job, connector: '%swapi_connector.connector_name.api%', type: '%pim_connector.job.import_type%' }

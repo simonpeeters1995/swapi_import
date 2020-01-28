@@ -1,0 +1,10 @@
+parameters:
+  swapi_connector.api.swapi_api_client.class: 'Swapi\Enrichment\Component\Api\Swapi\SwapiApiClient'
+
+services:
+  swapi_connector.api.swapi_api_client:
+    class: '%swapi_connector.api.swapi_api_client.class%'
+    calls:
+      - method: setLogger
+        arguments:
+          - '@monolog.logger'

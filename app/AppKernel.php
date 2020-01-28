@@ -21,7 +21,7 @@ class AppKernel extends Kernel
     {
         return [
             // your app bundles should be registered here
-            new swapi\Enrichment\Bundle\SwapiEnrichmentBundle(),
+            new Swapi\Enrichment\Bundle\SwapiEnrichmentBundle(),
         ];
     }
 

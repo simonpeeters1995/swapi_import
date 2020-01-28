@@ -1,0 +1,8 @@
+services:
+  swapi_connector.provider.form.job_instance:
+    class: 'Akeneo\Platform\Bundle\ImportExportBundle\Provider\Form\JobInstanceFormProvider'
+    arguments:
+      -
+        induxx_api_import: pim-job-instance-api-import
+    tags:
+      - { name: pim_enrich.provider.form }

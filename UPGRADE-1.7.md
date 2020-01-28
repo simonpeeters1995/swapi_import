@@ -320,7 +320,7 @@ services:
         class: '%pim_enrich.provider.form.job_instance.class%'
         arguments:
             -
-                my_custom_import_job_name: pim-job-instance-csv-base-import
+                my_custom_import_job_name: pim-Job-instance-csv-base-import
         tags:
             - { name: pim_enrich.provider.form, priority: 100 }
 ```

@@ -1,14 +1,10 @@
 <?php
 
-namespace swapi\Enrichment\Bundle;
+namespace Swapi\Enrichment\Bundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
-use Symfony\Component\DependencyInjection\ContainerBuilder;
 
 class SwapiEnrichmentBundle extends Bundle
 {
-    public function build(ContainerBuilder $container)
-    {
 
-    }
 }

@@ -1,0 +1,8 @@
+services:
+  Akeneo\Tool\Component\Batch\Job\JobParameters\EmptyConstraintCollectionProvider:
+    class: Akeneo\Tool\Component\Batch\Job\JobParameters\EmptyConstraintCollectionProvider
+    arguments:
+      -
+        - 'induxx_api_import'
+    tags:
+      - { name: akeneo_batch.job.job_parameters.constraint_collection_provider }
