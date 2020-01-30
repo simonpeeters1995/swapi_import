@@ -1,10 +1,7 @@
 services:
+
   swapi_connector.reader.category_reader:
     class: 'Swapi\Enrichment\Component\Connector\Reader\CategoryReader'
     arguments:
       - '@swapi_connector.api.swapi_api_client'
-
-  swapi_connector.reader.family_reader:
-    class: 'Swapi\Enrichment\Component\Connector\Reader\FamilyReader'
-    arguments:
-      - '@swapi_connector.api.swapi_api_client'
+      - '@swapi_connector.snake.modifier_snake_client'

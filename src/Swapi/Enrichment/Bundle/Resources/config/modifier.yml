@@ -1,0 +1,6 @@
+parameters:
+  swapi_connector.snake.modifier_snake_client.class: 'Swapi\Enrichment\Component\Modifier\SnakeCaseModifier'
+
+services:
+  swapi_connector.snake.modifier_snake_client:
+    class: '%swapi_connector.snake.modifier_snake_client.class%'

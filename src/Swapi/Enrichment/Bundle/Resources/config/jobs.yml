@@ -11,7 +11,6 @@ services:
       - '@akeneo_batch.job_repository'
       -
         - '@swapi_connector.step.swapi_category_import_step'
-        - '@swapi_connector.step.swapi_family_import_step'
         #- '@swapi_connector.step.swapi_product_import_step'
     tags:
       - { name: akeneo_batch.job, connector: '%swapi_connector.connector_name.api%', type: '%pim_connector.job.import_type%' }

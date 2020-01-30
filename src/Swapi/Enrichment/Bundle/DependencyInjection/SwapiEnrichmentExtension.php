@@ -22,6 +22,7 @@ class SwapiEnrichmentExtension extends Extension
         $loader->load('job_defaults.yml');
         $loader->load('job_parameters.yml');
         $loader->load('job_constraints.yml');
+        $loader->load('modifier.yml');
 
     }
 }

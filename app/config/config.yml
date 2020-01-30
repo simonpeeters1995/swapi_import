@@ -54,3 +54,12 @@ akeneo_pim_structure:
 
 parameters:
     pim_ce_dev_src_folder_location: '%kernel.project_dir%/vendor/akeneo/pim-community-dev'
+
+monolog:
+    channels: ['api_client']
+    handlers:
+        api_client:
+            type:     stream
+            path:     "%kernel.logs_dir%/api_client/%kernel.environment%.log"
+            level:    debug
+            channels: [api_client]
