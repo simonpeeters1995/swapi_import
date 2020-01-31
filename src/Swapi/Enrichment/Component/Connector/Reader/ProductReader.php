@@ -65,7 +65,7 @@ class ProductReader implements ItemReaderInterface
 
     private function convertStructuredData($data, $type)
     {
-        dump( $this->count . ' -- ' .$data['name']);
+        dump( $this->count . ' -- ' .$data['name'] . ' ' . $data['cost_in_credits']);
 
         $identifier = $this->snakeCaseModifier->modify($data['name']);
 
@@ -148,20 +148,24 @@ class ProductReader implements ItemReaderInterface
                         "data"      => $data['consumables']
                     ]
                 ],
-                'cost_in_credits'   =>  [
-                    0   =>  [
-                        "locale"    => null,
-                        "scope"     => null,
-                        "data"      => [
-                            0   => [
-                                "amount"    => $data['cost_in_credits'],
-                                "currency"  => "EUR"
-                            ]
-                        ],
-                     ]
-                ],
             ]
         ];
+
+        if(is_numeric($data['cost_in_credits']))
+        {
+            $convertedProductArray['values']['cost_in_credits'] = [
+                0   =>  [
+                    "locale"    => null,
+                    "scope"     => null,
+                    "data"      => [
+                        0   => [
+                            "amount"    => (float) $data['cost_in_credits'],
+                            "currency"  => "USD"
+                        ]
+                    ],
+                ]
+            ];
+        }
 
         if($type === 'starship')
         {
