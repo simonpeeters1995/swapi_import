@@ -1,0 +1,14 @@
+code;label-en_US;allowed_extensions;auto_option_sorting;available_locales;date_max;date_min;decimals_allowed;default_metric_unit;group;localizable;max_characters;max_file_size;metric_family;minimum_input_length;negative_allowed;number_max;number_min;reference_data_name;scopable;sort_order;type;unique;useable_as_grid_filter;validation_regexp;validation_rule;wysiwyg_enabled
+sku;SKU;;;;;;;;other;0;;;;;;;;;0;0;pim_catalog_identifier;1;1;;;
+product_name;;;;;;;;;swapi_attribute;0;;;;;;;;;0;0;pim_catalog_text;0;1;;;
+product_model;;;;;;;;;swapi_attribute;0;;;;;;;;;0;0;pim_catalog_text;0;1;;;
+product_manufacturer;;;;;;;;;swapi_attribute;0;;;;;;;;;0;0;pim_catalog_text;0;1;;;
+length;;;;;;;;;swapi_attribute;0;;;;;;;;;0;0;pim_catalog_text;0;1;;;
+max_atmosphering_speed;;;;;;;;;swapi_attribute;0;;;;;;;;;0;0;pim_catalog_text;0;1;;;
+crew;;;;;;;;;swapi_attribute;0;;;;;;;;;0;0;pim_catalog_text;0;1;;;
+passengers;;;;;;;;;swapi_attribute;0;;;;;;;;;0;0;pim_catalog_text;0;1;;;
+cargo_capacity;;;;;;;;;swapi_attribute;0;;;;;;;;;0;0;pim_catalog_text;0;1;;;
+consumables;;;;;;;;;swapi_attribute;0;;;;;;;;;0;0;pim_catalog_text;0;1;;;
+hyperdrive_rating;;;;;;;;;swapi_attribute;0;;;;;;;;;0;0;pim_catalog_text;0;1;;;
+cost_in_credits;;;;;;;1;;swapi_attribute;0;;;;;;;;;0;0;pim_catalog_price_collection;0;1;;;
+product_image;;;;;;;;;swapi_attribute;0;;;;;;;;;0;0;pim_catalog_image;0;0;;;

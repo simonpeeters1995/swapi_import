@@ -1,0 +1,3 @@
+code;label-en_US;attributes;attribute_as_image;attribute_as_label;requirements-ecommerce
+swapi_starship;Starships;cargo_capacity,consumables,cost_in_credits,crew,hyperdrive_rating,length,max_atmosphering_speed,passengers,product_image,product_manufacturer,product_model,product_name,sku;product_image;sku;sku
+swapi_vehicle;Vehicles;cargo_capacity,consumables,cost_in_credits,crew,length,max_atmosphering_speed,passengers,product_image,product_manufacturer,product_model,product_name,sku;product_image;sku;sku
