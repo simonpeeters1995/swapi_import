@@ -13,7 +13,7 @@ class CategoryReader implements ItemReaderInterface
     private $api_data;
     private $next_page_starship = 'https://swapi.co/api/starships?page=1';
     private $next_page_vehicle = 'https://swapi.co/api/vehicles?page=1';
-    private $type;
+    private $type = '';
     private $snakeCaseModifier;
     private $count=0;
 
@@ -64,6 +64,7 @@ class CategoryReader implements ItemReaderInterface
 
             return $this->convertStructuredData($item[$this->type.'_class']);
         }
+        dump('DONE');
         return null;
 
     }

@@ -1,6 +1,6 @@
 services:
-  Akeneo\Tool\Component\Batch\Job\JobParameters\EmptyConstraintCollectionProvider:
-    class: Akeneo\Tool\Component\Batch\Job\JobParameters\EmptyConstraintCollectionProvider
+  Swapi\Enrichment\Component\Connector\Job\JobParameters\ConstraintCollectionProvider\ProductApiImport:
+    class: Swapi\Enrichment\Component\Connector\Job\JobParameters\ConstraintCollectionProvider\ProductApiImport
     arguments:
       -
         - 'induxx_api_import'

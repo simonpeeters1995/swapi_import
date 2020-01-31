@@ -10,3 +10,14 @@ services:
       - '@pim_connector.processor.denormalization.category'
       - '@pim_connector.writer.database.category'
       - 1
+
+  swapi_connector.step.swapi_product_import_step:
+    class:  '%pim_connector.step.item_step.class%'
+    arguments:
+      - 'swapi_category_import_step'
+      - '@event_dispatcher'
+      - '@akeneo_batch.job_repository'
+      - '@swapi_connector.reader.product_reader'
+      - '@pim_connector.processor.denormalization.product'
+      - '@pim_connector.writer.database.product'
+      - 1

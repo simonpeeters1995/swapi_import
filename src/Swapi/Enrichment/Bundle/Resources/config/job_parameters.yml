@@ -2,8 +2,8 @@ services:
   swapi_connector.job.job_parameters.api_import:
     class: 'Swapi\Enrichment\Component\Connector\Job\JobParameters\ApiImport'
     arguments:
-      - '@Akeneo\Tool\Component\Batch\Job\JobParameters\EmptyDefaultValuesProvider'
-      - '@Akeneo\Tool\Component\Batch\Job\JobParameters\EmptyConstraintCollectionProvider'
+      - '@Swapi\Enrichment\Component\Connector\Job\JobParameters\DefaultValueProvider\ProductApiImport'
+      - '@Swapi\Enrichment\Component\Connector\Job\JobParameters\ConstraintCollectionProvider\ProductApiImport'
       -
         - '%swapi_connector.job_name.api_import%'
     tags:

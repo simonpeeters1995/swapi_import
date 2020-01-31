@@ -5,3 +5,9 @@ services:
     arguments:
       - '@swapi_connector.api.swapi_api_client'
       - '@swapi_connector.snake.modifier_snake_client'
+
+  swapi_connector.reader.product_reader:
+    class: 'Swapi\Enrichment\Component\Connector\Reader\ProductReader'
+    arguments:
+      - '@swapi_connector.api.swapi_api_client'
+      - '@swapi_connector.snake.modifier_snake_client'
