@@ -41,13 +41,13 @@ extensions:
       hideForCloudEdition: true
 
   pim-job-instance-api-import-show-file-path:
-    module: pim/job/common/file-path
+    module: swapi/job/common/file-path
     parent: pim-job-instance-api-import-show-launch-switcher-item
     config:
       label: pim_import_export.form.job_instance.file_path
 
   pim-job-instance-api-import-show-import-button:
-    module: pim/job/common/edit/launch
+    module: swapi/job/common/edit/launch
     parent: pim-job-instance-api-import-show-file-path
     targetZone: buttons
     config:

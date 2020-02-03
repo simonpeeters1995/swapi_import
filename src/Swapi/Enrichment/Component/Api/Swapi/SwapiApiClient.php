@@ -3,7 +3,6 @@
 namespace Swapi\Enrichment\Component\Api\Swapi;
 
 use GuzzleHttp\Exception\GuzzleException;
-use mysql_xdevapi\Exception;
 use Psr\Log\LoggerAwareInterface;
 use Psr\Log\LoggerAwareTrait;
 use GuzzleHttp\Client;

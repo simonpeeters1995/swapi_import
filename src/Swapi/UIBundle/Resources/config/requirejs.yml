@@ -1,0 +1,10 @@
+config:
+  paths:
+    #custom paths
+    # common
+    swapi/job/common/file-path: ui/js/job/common/file-path
+    swapi/job/common/edit/launch: ui/js/job/common/edit/launch
+    # Exports
+    swapi/template/export/common/edit/launch: ui/templates/export/common/edit/launch.html
+    # Imports
+    swapi/template/import/file-path: ui/templates/import/file-path.html

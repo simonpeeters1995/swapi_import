@@ -21,3 +21,4 @@ services:
       - '@pim_connector.processor.denormalization.product'
       - '@pim_connector.writer.database.product'
       - 1
+
